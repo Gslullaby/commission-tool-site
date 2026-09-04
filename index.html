@@ -1,68 +1,116 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="电商佣金计算工具：在本地整理直播订单、匹配主播排班、计算GMV和阶梯佣金，并通过TikTok官方接口核验剪辑视频播放量。">
-  <title>电商佣金计算工具 | E-commerce Commission Tool</title>
+  <meta name="description" content="A Windows desktop application for livestream order processing, auditable GMV and commission calculations, and authorized TikTok video-data verification. Operations are based in Indonesia.">
+  <title>E-commerce Commission Tool | Livestream GMV and Commission Operations</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">XF</span><span>电商佣金计算工具</span></a>
-    <nav aria-label="主导航">
-      <a href="index.html" aria-current="page">产品介绍</a>
-      <a href="terms.html">服务条款</a>
-      <a href="privacy.html">隐私政策</a>
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">XF</span><span>E-commerce Commission Tool</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#tiktok">TikTok Integration</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">E-commerce Commission Tool</div>
-        <h1>让佣金计算<br>清楚、有据可查</h1>
-        <p class="lead">一款由小斧科技团队提供的Windows桌面工具，用于整理直播订单、匹配主播排班、统计账号GMV与阶梯佣金，并通过TikTok官方接口核验剪辑视频的播放数据。</p>
+        <div class="eyebrow">Windows desktop application</div>
+        <h1>Auditable commission workflows for livestream commerce</h1>
+        <p class="lead">The E-commerce Commission Tool helps operations and finance teams organize livestream orders, match sales to host schedules, calculate GMV and tiered commissions, and verify editor reward data through authorized TikTok APIs.</p>
+        <div class="market-badge"><span aria-hidden="true"></span>Operations based in Indonesia</div>
         <div class="actions">
-          <a class="button primary" href="#features">了解功能</a>
-          <a class="button secondary" href="privacy.html">查看数据处理方式</a>
+          <a class="button primary" href="#workflow">Explore the workflow</a>
+          <a class="button secondary" href="#data">How data is handled</a>
         </div>
       </div>
-      <div class="hero-panel" aria-label="产品能力概览">
+      <div class="hero-panel" aria-label="Application capabilities">
         <div class="metric-stack">
-          <div class="metric"><strong>直播佣金</strong><span>排班匹配 · 订单筛选 · GMV汇总 · 阶梯比例</span></div>
-          <div class="metric"><strong>剪辑奖励</strong><span>TikTok账号授权 · 视频归属核验 · 播放量统计</span></div>
-          <div class="metric"><strong>本地处理</strong><span>Excel原始数据、中间证据与结果保存在用户电脑</span></div>
+          <div class="metric"><strong>Livestream commissions</strong><span>Schedule matching · LIVE order filtering · GMV summaries · configurable tiers</span></div>
+          <div class="metric"><strong>Editor rewards</strong><span>TikTok account authorization · video ownership checks · cumulative view counts</span></div>
+          <div class="metric"><strong>Review-ready evidence</strong><span>Source records, intermediate workbooks, exceptions, and final results remain traceable</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="features">
+    <section class="section" id="workflow">
       <div class="section-heading">
         <div class="eyebrow">Core workflow</div>
-        <h2>从原始表格到可复核的佣金结果</h2>
-        <p>工具保留计算过程中产生的中间表，方便财务、运营和主播核对每一笔结果。</p>
+        <h2>From source workbooks to reviewable results</h2>
+        <p>Each stage produces a clear intermediate record so operations and finance teams can review how every result was calculated before payment.</p>
       </div>
       <div class="grid">
-        <article class="card"><div class="number">01</div><h3>直播数据整理</h3><p>汇总订单Sheet，筛选有效LIVE订单，并将订单准确匹配到对应直播时段与主播。</p></article>
-        <article class="card"><div class="number">02</div><h3>可配置佣金</h3><p>按账号和主播统计GMV，支持调整佣金阈值、基础比例和超额比例。</p></article>
-        <article class="card"><div class="number">03</div><h3>TikTok数据核验</h3><p>经用户授权后，从TikTok Display API读取账号基本信息、视频列表和累计播放量。</p></article>
+        <article class="card"><div class="number">01</div><h3>Prepare livestream data</h3><p>Combine order sheets, retain eligible completed LIVE orders, and standardize schedule and order timestamps.</p></article>
+        <article class="card"><div class="number">02</div><h3>Match and calculate</h3><p>Match orders to the correct host and livestream account, summarize GMV, and apply configurable commission thresholds and rates.</p></article>
+        <article class="card"><div class="number">03</div><h3>Review evidence</h3><p>Export filtered orders, match results, account-level GMV, exceptions, and final commission summaries for verification.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="notice"><strong>重要说明：</strong>本网站仅用于介绍桌面应用及其数据政策，不会上传或处理用户的Excel、订单或佣金文件。桌面应用不是TikTok产品，也不代表TikTok；TikTok名称及相关商标归其各自权利人所有。</div>
+    <section class="section split-section" id="tiktok">
+      <div>
+        <div class="eyebrow">TikTok integration</div>
+        <h2>Authorized verification for editor rewards</h2>
+        <p class="section-copy">When an account holder chooses to connect a TikTok account, the application uses TikTok Login Kit and Display API to confirm account and video information used in the reward workflow.</p>
+        <ul class="check-list">
+          <li>Authorization takes place through TikTok's official sign-in flow.</li>
+          <li>The requested scopes are <code>user.info.basic</code> and <code>video.list</code>.</li>
+          <li>The application reads basic account details, video identifiers, publication times, and cumulative view counts.</li>
+          <li>Users can decline or revoke authorization at any time.</li>
+        </ul>
+      </div>
+      <aside class="integration-card" aria-label="TikTok verification sequence">
+        <div class="integration-step"><span>1</span><div><strong>Account holder authorizes access</strong><p>TikTok displays the requested permissions before consent.</p></div></div>
+        <div class="integration-step"><span>2</span><div><strong>The application retrieves permitted data</strong><p>Only the account and video fields needed for verification are requested.</p></div></div>
+        <div class="integration-step"><span>3</span><div><strong>The user reviews the evidence</strong><p>Verified view counts and exceptions are exported for commission review.</p></div></div>
+      </aside>
     </section>
 
-    <section class="section">
+    <section class="section" id="data">
       <div class="section-heading">
-        <div class="eyebrow">English summary</div>
-        <h2>Commission calculation with transparent evidence</h2>
-        <p>This Windows desktop application helps e-commerce operations organize LIVE orders, match orders to host schedules, calculate GMV and tiered commissions, and—with the user's authorization—verify TikTok video ownership and view counts through TikTok's official APIs. Business files and calculation outputs remain on the user's computer.</p>
+        <div class="eyebrow">Data and security</div>
+        <h2>Business files stay on the user's computer</h2>
+        <p>Excel source files, intermediate evidence, configuration outputs, and commission results are processed and stored locally. They are not uploaded to servers operated by the Xiaofu Technology Team.</p>
       </div>
+      <div class="detail-grid">
+        <article><h3>Local processing</h3><p>Users choose the input files and output folder. Generated workbooks remain under the user's control.</p></article>
+        <article><h3>Protected credentials</h3><p>TikTok Client Secrets and authorization tokens are stored using encryption scoped to the current Windows user.</p></article>
+        <article><h3>Limited network use</h3><p>Network communication occurs only when using TikTok authorization or requesting permitted account and video data from official TikTok services.</p></article>
+        <article><h3>No sale or advertising use</h3><p>We do not sell personal data or use local business files for advertising.</p></article>
+      </div>
+    </section>
+
+    <section class="section region-section">
+      <div>
+        <div class="eyebrow">Service region</div>
+        <h2>Operated from Indonesia for TikTok-supported markets</h2>
+      </div>
+      <div class="region-copy">
+        <p>The application is operated from Indonesia and is intended for e-commerce operations teams working in regions where TikTok and the relevant developer services are available.</p>
+        <p>It is not offered to users in mainland China and is not intended to access TikTok from mainland China-based IP addresses.</p>
+      </div>
+    </section>
+
+    <section class="section support-section">
+      <div>
+        <div class="eyebrow">Product information and support</div>
+        <h2>A maintained business operations application</h2>
+        <p>The Windows application is designed for real commission-processing workflows, not personal testing. Access, onboarding, and support are provided to authorized e-commerce operations teams.</p>
+      </div>
+      <a class="button primary" href="https://github.com/Gslullaby">Contact the operator</a>
+    </section>
+
+    <section class="section legal-notice">
+      <div class="notice"><strong>Independent application.</strong> This application is not a TikTok product and is not affiliated with, sponsored by, or endorsed by TikTok. TikTok names and trademarks belong to their respective owners.</div>
     </section>
   </main>
 
-  <footer><div class="footer-inner"><span>© 2026 小斧科技团队 · Xiaofu Technology Team</span><div class="footer-links"><a href="terms.html">服务条款</a><a href="privacy.html">隐私政策</a><a href="https://github.com/Gslullaby">联系我们</a></div></div></footer>
+  <footer><div class="footer-inner"><span>© 2026 Xiaofu Technology Team · Operations based in Indonesia</span><div class="footer-links"><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="https://github.com/Gslullaby">Contact</a></div></div></footer>
 </body>
 </html>
